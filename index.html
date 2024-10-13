@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Krsnasakhaa | Blog Site</title>
+
+  <!-- Meta For No Index -->
+  <meta name="robots" content="noindex, Nofollow, Noimageindex">
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Theme Stylesheet -->
+  <link href="css/style.css" rel="stylesheet" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+  <link rel="icon" href="images/large.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    /* Navbar styles */
+    .main-nav {
+      height: 82px;
+      position: sticky;
+      top: 0;
+      background-color: white;
+      z-index: 1000;
+    }
+
+    /* Styles for the mobile menu */
+    .navbar-collapse {
+      background-color: white;
+    }
+
+    .navbar-nav .nav-link {
+      padding: 10px 15px;
+    }
+
+    .navbar-toggler {
+      border: none;
+    }
+
+    /* Latest Posts Section */
+    .latest-posts {
+      padding: 40px 0;
+      background-color: #f9f9f9;
+    }
+
+    .latest-posts .card {
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 200px; /* Fixed height for cards */
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px; /* Space between cards */
+    }
+
+    .latest-posts .card-body {
+      padding: 15px;
+      flex-grow: 1; /* Makes body grow to take available space */
+    }
+
+    .latest-posts .btn-read-more {
+      background-color: #007bff; /* Blue button */
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .latest-posts .btn-read-more:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #f9f9f9;
+      padding: 20px 0;
+      position: relative;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar Start -->
+  <nav class="main-nav navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="logo-main" style="width: 115px; height: 82px; display: flex; align-items: center; justify-content: center; font-family: 'Jost', sans-serif; color: black; font-size: 1.2em; font-weight: bold;">
+          Krsnasakhaa
+        </div>
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#mainNav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-list" id="mainNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="main-nav-social">
+          <li>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/krsnasakhaa/"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <section class="featured">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <article class="featured-post">
+            <div class="featured-post-content">
+              <div class="featured-post-author">
+                <img src="images/author.png" alt="author" />
+                <p>By <span>Aayush Yadav</span></p>
+              </div>
+              <a href="single-blog.html" class="featured-post-title">
+                Your real identity is that you are an eternal servant of Krishna
+              </a>
+              <ul class="featured-post-meta">
+                <li>
+                  <i class="fa fa-clock-o"></i>
+                  October 12, 2024 - 3 min read
+                </li>
+              </ul>
+            </div>
+            <div class="featured-post-thumb">
+              <img src="images/Meera Bai (1).jpg" alt="feature-post-thumb" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Posts Section Start -->
+  <section class="latest-posts">
+    <div class="container">
+      <h2 class="text-center font-bold text-2xl mb-6">Latest Posts</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Krishna's Life Lessons</h5>
+              <p class="card-text">How the life of Lord Krishna can guide us in today's world.</p>
+              <a href="post1.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">The Power of Devotion</h5>
+              <p class="card-text">Understanding devotion through the stories of Krishna.</p>
+              <a href="post2.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Lessons from the Bhagavad Gita</h5>
+              <p class="card-text">Key takeaways from Krishna's teachings.</p>
+              <a href="post3.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">The Art of Living from Bhagavad Gita</h5>
+              <p class="card-text">Practical wisdom from Krishna's life.</p>
+              <a href="post4.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bhakti Yoga Explained from Bhagavad Gita</h5>
+              <p class="card-text">Exploring the path of devotion.</p>
+              <a href="post5.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Understanding Dharma</h5>
+              <p class="card-text">The importance of duty in Krishna's teachings.</p>
+              <a href="post6.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">The Role of Faith in Spiritual Growth</h5>
+              <p class="card-text">Faith as a pillar of spiritual practice.</p>
+              <a href="post7.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Krishna's Teachings on Relationships</h5>
+              <p class="card-text">Lessons on love and relationships.</p>
+              <a href="post8.html" class="btn-read-more">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Latest Posts Section End -->
+
+  <!-- Footer Start -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2024 Krsnasakhaa. All rights reserved.</p>
+      <a href="https://www.instagram.com/krsnasakhaa/" target="_blank">
+        <i class="fa fa-instagram" style="font-size: 24px; color: black;"></i> Krsnasakhaa
+      </a>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Other HTML content -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap Bundle JS (includes Popper.js) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</body>
+
+</html>
